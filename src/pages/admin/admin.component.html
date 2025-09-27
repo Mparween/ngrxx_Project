@@ -1,0 +1,18 @@
+<!-- <p>admin works!</p>
+
+{{count |async}}
+
+<ul>
+  @for (item of department$ |async; track $index) {
+    <li>{{item.departmentName}}</li>
+  }
+</ul> -->
+
+<!-- behavial sub -->
+ <h1>behavial Sub</h1>
+ <h1 *ngIf="loadingB$ | async">Loading...</h1>
+    <ul>
+      @for (dept of departmentsB$ | async; track $index) {
+        <li>{{ dept.departmentName }}</li>
+      }
+    </ul>
